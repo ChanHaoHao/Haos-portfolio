@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <!-- this will allow the website to be responsive to the size of the screen -->
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Chan Hao Hao's Website</title>
+        <!-- connect the file with the style.css we created -->
+        <link rel="stylesheet" href="style.css">
+        <!-- got the font from google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<!-- got the icons from bootstrap cdn -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+<script src="https://kit.fontawesome.com/40cc956bd2.js" crossorigin="anonymous"></script>
+<body>
+<section class="header">
+    <!-- add the logo in nav -->
+    <nav>
+        <a href="index.html"><img src="images/logo.jpg"></a>
+        <!-- add the links here -->
+        <div class="nav-links" id="navLinks">
+            <!-- the icon used to close the side bar -->
+            <!-- add the click event here to trigger the menu, add a javascript below -->
+            <i class="fa-regular fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSES</a></li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="">CONTACTS</a></li>
+            </ul>
+        </div>
+        <!-- the icon used to open the side bar -->
+        <i class="fa-regular fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <!-- <h1> creates a header -->
+    <h1>Chan Hao Hao's Website</h1>
+    <!-- <p> creates a text, if a setence needed to be breaked into 2 lines use <br> -->
+    <p>Hi, I am currently a senior from NTU, interested in programming, robotics and machine learning.</p>
+    <!-- <a href> creates a link to something, class allows the link into a button -->
+    <a href="" class="hero-btn">Visit me to know more about ME!!!!!</a>
+</div>
+</section>
+
+<!-- Introduction -->
+<section class="skills">
+    <h1>Skills</h1>
+    <p>Python, ROS, SolidWorks, Matlab</p>
+
+    <div class="row">
+        <div class="skills-col">
+            <h3>Python</h3>
+            <p>Programming</p>
+        </div>
+        <div class="skills-col">
+            <h3>ROS</h3>
+            <p>Robotics Operating System</p>
+        </div>
+        <div class="skills-col">
+            <h3>SolidWorks</h3>
+            <p>3D drawing</p>
+        </div>
+        <div class="skills-col">
+            <h3>Matlab</h3>
+            <p>Simulation</p>
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section class="education">
+    <h1>Education</h1>
+    <p>National Taiwan University</p>
+
+    <div class="row">
+        <div class="education-col">
+            <img src="images/NTU.jpg">
+            <div class="layer">
+                <h3>NTU Library</h3>
+            </div>
+        </div>
+        <div class="education-col">
+            <img src="images/NTU2.jpg">
+            <div class="layer">
+                <h3>NTU Entrance</h3>
+            </div>
+        </div>
+        <div class="education-col">
+            <img src="images/NTU3.jpg">
+            <div class="layer">
+                <h3>NTU Bird View</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects">
+    <h1>Side Projects</h1>
+    <p>These are the side projects that I have done.</p>
+
+    <div class="row">
+        <div class="projects-col">
+            <img src="images/NTU.jpg">
+            <h3>Library</h3>
+            <p>This is the library</p>
+        </div>
+        <div class="projects-col">
+            <img src="images/NTU2.jpg">
+            <h3>Library</h3>
+            <p>This is the library</p>
+        </div>
+        <div class="projects-col">
+            <img src="images/NTU3.jpg">
+            <h3>Library</h3>
+            <p>This is the library</p>
+        </div>
+    </div>
+    
+</section>
+
+<!-- Members -->
+<section class="members">
+    <h1>Members</h1>
+    <p>These are the members.</p>
+
+    <div class="row">
+        <div class="members-col">
+            <img src="images/NTU.jpg">
+            <div>
+                <p>balabalabalabala</p>
+                <h3>Chan Hao Hao</h3>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="members-col">
+            <img src="images/NTU.jpg">
+            <div>
+                <p>balabalabalabala</p>
+                <h3>Chan Hao Hao</h3>
+            </div>
+        </div>
+        <div class="members-col">
+            <img src="images/NTU.jpg">
+            <div>
+                <p>balabalabalabala</p>
+                <h3>Chan Hao Hao</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<section class="footer">
+    <h4>Programmer</h4>
+    <p>The designer of the website is Chan Hao Hao.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+    <p>Learned from Easy Tutorials <i class="fa-regular fa-heart"></i></p>
+</section>
+
+<!-- the javascript to open and close the bar -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        // navLinks.style is in style.css media
+        navLinks.style.right="0";
+    }
+    function hideMenu() {
+        navLinks.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>
