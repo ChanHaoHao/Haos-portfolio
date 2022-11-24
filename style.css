@@ -10,7 +10,7 @@
     min-height: 100vh;
     width: 100%;
     /* add the image path in ,url() */
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/wallpaper.png);
     background-position: center;
     background-size: cover;
     position: relative;
