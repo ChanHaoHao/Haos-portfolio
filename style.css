@@ -136,12 +136,46 @@ nav .fa{
     }
 }
 
+/* Section intro */
+.Intro{
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.profile-pic{
+    width: 300px;
+    height: 300px;
+}
+.side1 h2{
+    font-size: 16px;
+    padding-top: 2%;
+    text-align: center;
+}
+.side1 p{
+    font-style: italic;
+    line-height: 0.5em;
+    color: #120707;
+}
+.side2{
+    width: 50%;
+    position: relative;
+    bottom: -200;
+}
+.side2 p{
+    color: #0f2f2c;
+    padding-bottom: 1px;
+}
+
 /* ------------ skills ------------ */
 .skills{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10px;
 }
 h1{
     font-size: 36px;
