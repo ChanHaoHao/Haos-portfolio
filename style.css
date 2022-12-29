@@ -182,11 +182,15 @@ h1{
     font-weight: 600;
 }
 p{
-    color: #777;
+    color: rgb(5, 13, 249);
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
+}
+p1{
+    font-size: 14px;
+    font-weight: 900;
 }
 
 /* deal with the columns */
@@ -196,9 +200,9 @@ p{
     justify-content: space-between;
 }
 .skills-col{
-    flex-basis: 30%;
+    flex-basis: 24%;
     /* this add the columns with background colors */
-    background: #fff3f3;
+    background: #dcd4f0;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -209,8 +213,11 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
+ul{
+    text-align: left;
+}
 .skills-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0px rgba(6, 61, 243, 0.923);
 }
 
 /* deal with small screens */
@@ -226,6 +233,9 @@ h3{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+h2{
+    text-align: left;
 }
 .education-col{
     flex-basis: 32%;
@@ -279,7 +289,7 @@ h3{
     padding-top: 100px;
 }
 .projects-col{
-    flex-basis: 31%;
+    flex-basis: 33%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
