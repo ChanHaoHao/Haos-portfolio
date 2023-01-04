@@ -316,13 +316,13 @@ h2{
 }
 
 /* ------------ Members ------------ */
-.members{
+.courses{
     width: 80%;
     margin: auto;
     padding-top: 100px;
     text-align: center;
 }
-.members-col{
+.courses-col{
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -332,17 +332,16 @@ h2{
     cursor: pointer;
     display: flex;
 }
-.members-col img{
+.courses-col img{
     height: 30px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 50%;
 }
-.members-col p{
+.courses-col p{
     padding: 0;
 }
-.members-col h3{
-    margin-top: 15px;
+.courses-col h5{
     text-align: left;
 }
 .fa-star{
@@ -350,7 +349,7 @@ h2{
 }
 
 @media(max-width: 700px) {
-    .members-col img{
+    .courses-col img{
         margin-left: 0px;
         margin-right: 15px;
     }
