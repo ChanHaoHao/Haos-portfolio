@@ -76,6 +76,7 @@ nav img{
 /* change the text size here */
 .text-box p{
     margin: 10px 0 40px;
+    padding-bottom: 1px;
     font-size: 14px;
     color: #fff;
 }
@@ -159,6 +160,7 @@ nav .fa{
     font-style: italic;
     line-height: 0.5em;
     color: #120707;
+
 }
 .side2{
     width: 50%;
@@ -169,7 +171,12 @@ nav .fa{
     color: #0f2f2c;
     padding-bottom: 1px;
 }
-
+.row1 img{
+    width: auto;
+}
+.row1 p{
+    text-align: center;
+}
 /* ------------ skills ------------ */
 .skills{
     width: 80%;
@@ -351,6 +358,7 @@ h2{
 
 /* ------------ footer ------------ */
 .footer{
+    margin-top: 10%;
     width: 100%;
     text-align: center;
     padding: 30px 0;
