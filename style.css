@@ -140,8 +140,6 @@ nav .fa{
 /* Section intro */
 .Intro{
     display: flex;
-    max-width: 1500px;
-    justify-content: center;
     justify-content: space-evenly;
     height: 60vh;
     padding: 50px;
@@ -174,7 +172,8 @@ nav .fa{
 }
 .side2 #update {
     position: relative;
-    top: 100px;
+    padding: auto;
+
     color: #f44336;
 }
 .row1 {
@@ -192,7 +191,7 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 100px;
 }
 h1{
     font-size: 36px;
