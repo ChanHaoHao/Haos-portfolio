@@ -3,5 +3,80 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    background-color: black;
+}
+body {
+    background-color: #262a2f;
+    color: #333;
+}
+.header h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 130px;
+    color: #642bff;
+}
+.search-box {
+    width: 700px;
+    background: #fff;
+    margin: 50px auto 0;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+input {
+    flex: 1;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 25px;
+}
+button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+button .fa-brands {
+    width: 25px;
+    color: #555;
+    font-size: 30px;
+    cursor: pointer;
+}
+/*change the color of the word in the search box*/
+::placeholder {
+    color: #777;
+}
+
+.result-box {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+/*added the line under the search box*/
+.result-box ul {
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+.result-box ul li {
+    list-style: none;
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.result-box ul li:hover {
+    background: #e9f3ff;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#642bff, #ff22e6);
+    border-radius: 10px;
 }
