@@ -100,7 +100,10 @@ nav img{
 }
 /* this will stop the icons for smaller screens show */
 nav .fa{
-    display: block;
+    display: none;
+}
+nav .fa-brands {
+    display: none;
 }
 
 /* deal with smaller screen, so that the font size won't become weird */
@@ -109,7 +112,7 @@ nav .fa{
         font-size: 20px;
     }
     .nav-links ul li{
-        display: none;
+        display: block;
     }
     /* turn the link into a side bar, right -200 will hide the menu at first */
     .nav-links{
@@ -118,7 +121,7 @@ nav .fa{
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -200;
+        right: -200px;
         text-align: left;
         z-index: 2;
         transition: 1s;
@@ -130,6 +133,9 @@ nav .fa{
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
+    }
+    nav .fa-brands {
+        display: block;
     }
     /* get some space around the menu */
     .nav-links ul{
@@ -186,6 +192,33 @@ nav .fa{
 .row1 p{
     text-align: center;
 }
+
+@media(max-width: 700px) {
+    .Intro {
+        display: block;
+    }
+    .Intro p {
+        font-size: 10px;
+    }
+    .side1 {
+        text-align: center;
+    }
+    .side2 {
+        display: block;
+        text-align: center;
+        width: auto;
+    }
+    .side2 h2 {
+        display: none;
+    }
+    .row1 {
+        display: none;
+    }
+    .profile-pic {
+        border-radius: 50%;
+    }
+}
+
 /* ------------ skills ------------ */
 .skills{
     width: 80%;
@@ -231,6 +264,7 @@ h3{
 }
 ul{
     text-align: left;
+    padding-left: 30px;
 }
 .skills-col:hover{
     box-shadow: 0 0 20px 0px rgba(6, 61, 243, 0.923);
@@ -241,60 +275,47 @@ ul{
     .row{
         flex-direction: column;
     }
+    .skills-col ul {
+        padding-left: 0;
+    }
+    .skills-col ul li{
+        display: block;
+        text-align: center;
+        font-size: 15px;
+    }
 }
 
-/* ------------ Education ------------ */
-.education{
+/* ------------ Courses ------------ */
+.courses{
     width: 80%;
     margin: auto;
-    text-align: center;
     padding-top: 100px;
+    text-align: center;
 }
-h2{
-    text-align: left;
-}
-.education-col{
-    flex-basis: 32%;
+.courses-col{
+    display: block;
+    justify-content: start;
+    flex-basis: 30%;
     border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+    margin-bottom: 5%;
+    text-align: center;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    
 }
-/* change the size of the img */
-.education-col img{
-    width: 100%;
-    border-radius: 10px;
-    height: 100%;
+.courses-col p{
+    padding: 0;
 }
-.layer{
-    background: transparent;
-    border-radius: 10px;
-    height: 100%;
-    width: 94%;
-    position: absolute;
-    top: 0;
-    left: 12px;
-}
-.layer:hover{
-    background: rgba(111, 73, 228, 0.7);
-    transition: 0.5s;
-}
-.layer h3{
-    width: 100%;
-    font-weight: 500;
-    color: #fff;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    transition: 0.5s;
-    /* opacity: 0 hides the word at first */
-    opacity: 0;
-}
-.layer:hover h3{
-    bottom: 35%;
-    opacity: 1;
+
+@media(max-width: 700px) {
+    .courses h1{
+        font-size: 30px;
+    }
+    .courses-col h5 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
 }
 
 /* ------------ Side Projects ------------ */
@@ -303,6 +324,9 @@ h2{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+.projects a {
+    text-decoration: none;
 }
 .projects-col{
     flex-basis: 33%;
@@ -324,44 +348,9 @@ h2{
     text-align: left;
 }
 
-/* ------------ Courses ------------ */
-.courses{
-    width: 80%;
-    margin: auto;
-    padding-top: 100px;
-    text-align: center;
-}
-.courses-col{
-    flex-basis: 44%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    background: #fff3f3;
-    padding: 25px;
-    cursor: pointer;
-    display: flex;
-}
-.courses-col img{
-    
-    height: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 50%;
-}
-.courses-col p{
-    padding: 0;
-}
-.courses-col h5{
-    text-align: left;
-}
-.fa-star{
-    color: #f44336;
-}
-
-@media(max-width: 700px) {
-    .courses-col img{
-        margin-left: 0px;
-        margin-right: 15px;
+@media (max-width: 700px) {
+    .projects h1 {
+        font-size: 30px;
     }
 }
 
