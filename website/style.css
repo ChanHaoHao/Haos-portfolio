@@ -142,3 +142,27 @@ button .fa-brands {
     background: linear-gradient(#642bff, #ff22e6);
     border-radius: 10px;
 }
+
+@media (max-width: 700px) {
+    .header h1 {
+        padding-top: 10px;
+        font-size: 80px;
+    }
+
+    .search-box {
+        margin: 0 auto;
+        width: 340px;
+    }
+    button {
+        margin-right: 20;
+    }
+    .checkboxContainer {
+        display: inline-block;
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .checkboxContainer label {
+        white-space: nowrap;
+    }
+}
