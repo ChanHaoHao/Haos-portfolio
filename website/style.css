@@ -163,4 +163,7 @@ button .fa-brands {
         padding-left: 0;
         padding-right: 0;
     }
+    .checkboxContainer label {
+        white-space: nowrap;
+    }
 }
