@@ -157,7 +157,8 @@ button .fa-brands {
         margin-right: 20;
     }
     .checkboxContainer {
-        display: inline-block;
+        display: block;
+        flex-direction: column;
         padding-top: 10px;
         padding-left: 0;
         padding-right: 0;
