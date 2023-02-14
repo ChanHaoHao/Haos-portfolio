@@ -78,6 +78,7 @@ button .fa-brands {
 }
 
 .checkboxContainer {
+    display: inline-block;
     white-space: wrap;
     padding-top: 80px;
     padding-left: 40px;
