@@ -328,8 +328,12 @@ ul{
 .projects a {
     text-decoration: none;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 .projects-col{
-    flex-basis: 33%;
+    flex-basis: 25%;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 10px;
